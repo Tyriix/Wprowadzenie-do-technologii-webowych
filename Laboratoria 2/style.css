@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#header-bar{
+    height: 5px;
+    background-color: #242e30;
+    width: 100%;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: gray solid 1px;
+}
+#logo{
+    align-self: flex-end;
+}
+#nav{
+    text-transform: uppercase;
+}
+#nav a, a:link, a:visited{
+    text-decoration: none;
+    color: #618bff;
+}
+#nav a:hover{
+    color: #4274ff;
+}
+#main{
+    width: 1000px;
+    
+}
+#column-top{
+    text-align: center;
+    font-size: 30px;
+}
+#columns{
+    display: flex;
+    justify-content: space-between;
+
+}
+#column-left{
+    width: 400px;
+}
+#column-right{
+    width: 400px;
+}
+#circles{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#circle{
+    height: 200px;
+    width: 200px;
+    background-color: #618bff;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+#circle2{
+    height: 200px;
+    width: 200px;
+    background-color: #618bff;
+    border-radius: 50%;
+    margin-left: -40px;
+    opacity: 0.7;
+}
+#circle3{
+    height: 200px;
+    width: 200px;
+    background-color: #618bff;
+    border-radius: 50%;
+    margin-left: -40px;
+    opacity: 0.7;
+}
+#circle:hover{
+    opacity: 0.85;
+}
+#circle2:hover{
+    opacity: 0.85;
+}
+#circle3:hover{
+    opacity: 0.85;
+}
+#footer{
+    background-color: #242e30;
+    height: 269px;
+    width: 100%;
+    margin-top: 40px;
+    background-image: url(img/zabek.jpg);
+    background-repeat: repeat-x;
+}
