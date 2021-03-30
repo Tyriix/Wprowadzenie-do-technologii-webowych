@@ -4,6 +4,9 @@ body {
     flex-direction: column;
     align-items: center;
 }
+span{
+    color: white;
+}
 #header-bar{
     height: 5px;
     background-color: #242e30;
@@ -13,6 +16,7 @@ body {
     display: flex;
     justify-content: space-between;
     border-bottom: gray solid 1px;
+    margin-top: 40px;
 }
 #logo{
     align-self: flex-end;
@@ -32,9 +36,17 @@ body {
 }
 #column-top{
     text-align: center;
-    font-size: 29px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+#columnTopText{
     color: #71ABC7;
+    font-size: 29px;
     font-family:Arial;
+    text-align: center;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-bottom: 50px;
 }
 #columns{
     display: flex;
@@ -147,6 +159,8 @@ body {
 }
 #footer{
     background-color: #242e30;
+    color: rgb(121, 121, 121);
+    padding: 20px;
     height: 269px;
     width: 100%;
     margin-top: 40px;
