@@ -1,6 +1,6 @@
 body{
     font-family: Arial, sans-serif;
-
+    margin: 0px;
 }
 .containter{
     display: flex;
@@ -8,10 +8,29 @@ body{
 }
 .maillist{
     display: flex;
-    flex-direction: ;
-    width: 350px;
+    flex-direction:column;
+    width: 639px;
     height: 100vh;
+}
+#mail{
+    display:flex;
+    border-bottom: grey 1px solid;
     padding: 14px 16px;
+}
+#mailfirst{
+    display:flex;
+    border-bottom: grey 1px solid;
+    padding: 14px 16px;
+}
+#mailfirst:hover{
+    display:flex;
+    border-bottom: grey 1px solid;
+    padding: 14px 16px;
+    background-color: #eee;
+}
+#mailshort{
+    display: flex;
+    flex-direction: column;
 }
 .avatar{
     width: 42px;
@@ -19,8 +38,35 @@ body{
     border-radius: 3px;
     margin-right: 8px;
 }
+
+#title{
+    font-size: 16px;
+    color: black;
+}
+article{
+    font-size: 13px;
+    color: black;
+    margin: 7px 0;
+}
 .mailcontent{
+    display: flex;
+    flex-direction: column;
     height: fit-content;
+}
+#contenttitle{
+    font-size: 32px;
+    color: black;
+}
+#infoboxfirst{
+    display: flex;
+}
+#infoboxbutton{
+    padding: 6px 26px;
+    
+}
+#contentinfo{
+    font-size: 16px;
+    color: black;
 }
 #menu{
     display: flex;
