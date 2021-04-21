@@ -1,124 +1,150 @@
-body{
-    font-family: Arial, sans-serif;
-    margin: 0px;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0px;
 }
-.containter{
-    display: flex;
+main {
+  display: grid;
+}
+#menu {
+  display: flex;
+  flex-direction: column;
+  height: 30px;
+  background-color: #252a3a;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+#menu:hover {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #252a3a;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+#menutext {
+  text-align: right;
+  color: #1b98f8;
+}
+.maillist {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+#mail {
+  display: flex;
+  border-bottom: grey 1px solid;
+  padding: 14px 16px;
+}
+#mailfirst {
+  display: flex;
+  border-bottom: grey 1px solid;
+  padding: 14px 16px;
+}
+#mailfirst:hover {
+  display: flex;
+  border-bottom: grey 1px solid;
+  padding: 14px 16px;
+  background-color: #eee;
+}
+#mailshort {
+  display: flex;
+  flex-direction: column;
+}
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 3px;
+  margin-right: 8px;
+}
 
+#title {
+  font-size: 16px;
+  color: black;
 }
-.maillist{
-    display: flex;
-    flex-direction:column;
-    width: 639px;
-    height: 100vh;
+article {
+  font-size: 13px;
+  color: black;
+  margin: 7px 0;
 }
-#mail{
-    display:flex;
-    border-bottom: grey 1px solid;
-    padding: 14px 16px;
+.mailcontent {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
 }
-#mailfirst{
-    display:flex;
-    border-bottom: grey 1px solid;
-    padding: 14px 16px;
+#contenttitle {
+  font-size: 32px;
+  color: black;
 }
-#mailfirst:hover{
-    display:flex;
-    border-bottom: grey 1px solid;
-    padding: 14px 16px;
-    background-color: #eee;
+#infoboxfirst {
+  display: flex;
 }
-#mailshort{
-    display: flex;
-    flex-direction: column;
+#infoboxbutton {
+  padding: 6px 26px;
 }
-.avatar{
-    width: 42px;
-    height: 42px;
-    border-radius: 3px;
-    margin-right: 8px;
+#contentinfo {
+  font-size: 16px;
+  color: black;
 }
 
-#title{
-    font-size: 16px;
-    color: black;
+button {
+  border-radius: 20px;
+  padding: 8px 16px;
+  margin: 16px 01;
+  width: fit-content;
+  background-color: #1b98f8;
+  border: none;
 }
-article{
-    font-size: 13px;
-    color: black;
-    margin: 7px 0;
+#button {
+  display: flex;
+  justify-content: center;
 }
-.mailcontent{
+span {
+  color: white;
+  padding-left: 15px;
+}
+span#num {
+  color: gray;
+}
+span#name {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #999;
+}
+span#title {
+  font-size: 16px;
+  color: black;
+}
+h4 {
+  padding-left: 10px;
+  color: gray;
+}
+@media screen and (max-width: 639px) {
+  #menu:hover {
     display: flex;
     flex-direction: column;
-    height: fit-content;
-}
-#contenttitle{
-    font-size: 32px;
-    color: black;
-}
-#infoboxfirst{
-    display: flex;
-}
-#infoboxbutton{
-    padding: 6px 26px;
-    
-}
-#contentinfo{
-    font-size: 16px;
-    color: black;
-}
-#menu{
-    display: flex;
-    flex-direction: column;
-    width: 639px;
-    height: 30px;
-    background-color: #252a3a;
-    padding-bottom: 20px;
-    overflow: hidden;
-}
-#menu:hover{
-    display: flex;
-    flex-direction: column;
-    width: 639px;
     height: 100%;
     background-color: #252a3a;
     padding-bottom: 20px;
     overflow: hidden;
+  }
 }
-#menutext{
-    text-align: right;
-    color: #1B98F8;
-}
-button{
-    border-radius: 20px;
-    padding: 8px 16px;
-    margin: 16px 01;
-    width: fit-content;
-    background-color: #1B98F8;
-    border:none;
-}
-#button{
+@media screen and (min-width: 639px) {
+  main {
+    display: grid;
+    grid-template-columns: 150px auto;
+  }
+  #menu {
     display: flex;
-    justify-content: center;
-}
-span{
-    color: white;
-    padding-left: 15px;
-}
-span#num{
-    color: gray;
-}
-span#name{
-    text-transform: uppercase;
-    font-size: 13px;
-    color: #999;
-}
-span#title{
-    font-size: 16px;
-    color: black;
-}
-h4{
-    padding-left: 10px;
-    color: gray;
+    flex-direction: column;
+    height: 100%;
+    background-color: #252a3a;
+    padding-bottom: 20px;
+    overflow: hidden;
+  }
+  @media screen and (min-width: 960px) {
+    .maillist {
+      display: grid;
+      grid-template-columns: 300px auto;
+    }
+  }
 }
