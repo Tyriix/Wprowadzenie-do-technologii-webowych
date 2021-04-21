@@ -28,7 +28,6 @@ main {
 .maillist {
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 #mail {
   display: flex;
@@ -66,17 +65,23 @@ article {
   color: black;
   margin: 7px 0;
 }
-.mailcontent {
-  display: flex;
-  flex-direction: column;
-  height: fit-content;
-}
 #contenttitle {
   font-size: 32px;
   color: black;
 }
+#infobox{
+    display: flex;
+    flex-direction: row;
+}
 #infoboxfirst {
   display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+#infoboxsecond{
+    display: flex;
+    justify-content: center;
 }
 #infoboxbutton {
   padding: 6px 26px;
@@ -85,18 +90,26 @@ article {
   font-size: 16px;
   color: black;
 }
-
-button {
-  border-radius: 20px;
-  padding: 8px 16px;
-  margin: 16px 01;
-  width: fit-content;
-  background-color: #1b98f8;
-  border: none;
-}
 #button {
   display: flex;
   justify-content: center;
+
+}
+
+#compose{
+    border-radius: 20px;
+    padding: 8px 16px;
+    margin: 16px 01;
+    width: fit-content;
+    background-color: #1b98f8;
+    border: none;
+}
+#infoboxbutton{
+    display: flex;
+    border-radius: 50px;
+    height: fit-content;
+    width: 60px;
+    justify-content: center;
 }
 span {
   color: white;
@@ -142,7 +155,7 @@ h4 {
     overflow: hidden;
   }
   @media screen and (min-width: 960px) {
-    .maillist {
+    .mailcontainer {
       display: grid;
       grid-template-columns: 300px auto;
     }
