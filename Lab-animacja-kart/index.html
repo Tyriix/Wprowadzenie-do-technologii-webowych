@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacja</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://kit.fontawesome.com/c39d17edb5.js"
+      crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <div class="cards">
+        <div class="card-happy">
+            <div class="title">
+                <h2>Happy Sushi Lunch</h2>
+            </div>
+            <ul>
+                <li>California Roll</li>
+                <li>2 Pieces Salmon Nigiri</li>
+                <li>Sea Salt Edamame</li>
+                <li>Miso Soup</li>
+              </ul>
+              <div class="price">$12</div>
+        </div>
+        <div class="card-lovers">
+            <div class="title">
+                <h2>Sushi Lover's Lunch</h2>
+            </div>
+            <ul>
+                <li>Spicy Tuna Roll</li>
+                <li>Shrimp Tempura Roll</li>
+                <li>4 Pieces Assorted Nigiri</li>
+                <li>Wonton Soup</li>
+            </ul>
+            <div class="price">$18</div>
+        </div>
+    
+    <div class="button">
+        <p><i class="fas fa-arrow-circle-right"></i>
+        Switch to Sushi Lover's Lunch!</p>
+    </div>
+    <div class="button">
+        <p><i class="fas fa-arrow-circle-left"></i>
+        Switch to Happy Sushi Lunch!</p>
+    </div>
+    </div>
+    <script type="text/javascript">
+    const btn = document.querySelector('#button')
+    btn.addEventListener('click', () => {
+    card.classList.add('active');
+    card.classList.remove('active');
+    })
+    </script>
+</body>
+</html>
