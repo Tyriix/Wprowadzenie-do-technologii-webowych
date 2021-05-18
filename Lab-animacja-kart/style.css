@@ -1,39 +1,43 @@
 body{
     background-color: #5b6775;
-    height: 100vh;
-    width: 100vw;
+    height: 90vh;
+    width: 90vw;
 }
 .cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.buttons{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 .card-happy{
+    transform: scale(1.0) translate(-10%);
+    transition: all 2s;
     background-color: #f6f7f8;
     height: 210px;
     width: 220px;
     margin-right: 20px;
+    margin-top: 100px;
     text-align: center;
-    margin-top: 200px;
     box-shadow: 10px 5px 5px #333333;
-    z-index: 100;
 }
 .card-lovers{
+    transform: scale(1.2) translate(-10%);
+    transition: all 2s;
     background-color: #f6f7f8;
     height: 210px;
     width: 220px;
     margin-right: 20px;
+    margin-top: 100px;
     text-align: center;
-    margin-top: 200px;
     box-shadow: 10px 5px 5px #333333;
-    z-index: 100;
 }
-.active{
-    height: 310px;
-    width: 320px;
-    z-index: 50;
-}
+
 .price{
     display: flex;
     background-color: #c1d5d4;
@@ -48,7 +52,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-.button{
+button{
     display: flex;
     position:fixed;
     top: 480px;
@@ -60,6 +64,19 @@ body{
     width: 240px;
     border-radius: 50px;
     border:white solid 1px
+}
+.card-happy.active{
+    transform: scale(1.2) translate(10%);
+    right:30px;
+    transition: all 2s;
+}
+.card-lovers.active{
+    transform: scale(1.0) translate(0%);
+    left:30px;
+    transition: all 2s;
+}
+.happy-btn.active{
+    display: none;
 }
 h2{
     border-bottom: #e9e9e9f5 solid 1px;
