@@ -16,9 +16,8 @@ body{
     justify-content: center;
 }
 .card-happy{
-    transform: scale(1.0) translate(-10%);
-    transition: all 2s;
     background-color: #f6f7f8;
+    transform:translate(15%);
     height: 210px;
     width: 220px;
     margin-right: 20px;
@@ -27,9 +26,8 @@ body{
     box-shadow: 10px 5px 5px #333333;
 }
 .card-lovers{
-    transform: scale(1.2) translate(-10%);
-    transition: all 2s;
     background-color: #f6f7f8;
+    transform: scale(1.2) translate(-15%);
     height: 210px;
     width: 220px;
     margin-right: 20px;
@@ -66,14 +64,48 @@ button{
     border:white solid 1px
 }
 .card-happy.active{
-    transform: scale(1.2) translate(10%);
-    right:30px;
-    transition: all 2s;
+    animation: movehappy 1s linear forwards;
+    transition: all 1s;
 }
 .card-lovers.active{
-    transform: scale(1.0) translate(0%);
-    left:30px;
-    transition: all 2s;
+    animation: movelovers 1s linear forwards;
+    transition: all 1s;
+}
+.card-happy.activesecond{
+    animation: movehappysecond 1s linear forwards;
+    transition: all 1s;
+}
+.card-lovers.activesecond{
+    animation: moveloverssecond 1s linear forwards;
+    transition: all 1s;
+}
+@keyframes movehappy {
+    0%   {transform: scale(1.0) translate(15%);}
+    25%  {transform: scale(1.0) translate(0%);}
+    50% {transform: scale(1.1) translate(-15%); z-index: 20;}
+    75% {transform: scale(1.2) translate(0%); z-index: 40;}
+    100% {transform: scale(1.2)translate(15%); z-index: 50;}
+}
+@keyframes movelovers {
+    0%   {transform:scale(1.2) translate(-15%);}
+    25%  {transform:scale(1.1) translate(0%);}
+    50%  {transform:scale(1.0) translate(15%) ;}
+    75%  {transform:scale(1.0)  translate(0%) ;}
+    100% {transform:scale(1.0) translate(-15%) ;}
+}
+@keyframes movehappysecond {
+    0%   {transform: scale(1.2) translate(15%); z-index: 50;}
+    25%  {transform: scale(1.2) translate(0%); z-index: 40;}
+    50% {transform: scale(1.1) translate(-15%); z-index: 20;}
+    75% {transform: scale(1.0) translate(0%);}
+    100% {transform: scale(1.0) translate(15%);}
+}
+@keyframes moveloverssecond {
+    0%   {transform:scale(1.0) translate(-15%);}
+    25%  {transform:scale(1.0) translate(0%);}
+    50%  {transform:scale(1.0) translate(15%) ;}
+    75%  {transform:scale(1.1)  translate(0%) ;}
+    100% {transform:scale(1.2) translate(-15%) ;}
 }
 .happy-btn.active{
     display: none;
