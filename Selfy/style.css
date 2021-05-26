@@ -5,16 +5,18 @@ body{
 .container{
 display: grid;
 grid-template-areas: 
-    "menu logo logo"
-    "Image Image Image"
-    "About-me What-i-do Get-in-touch"
-    "footer footer footer";
-grid-template-columns: 22% 4% 74%;
-grid-template-rows: auto;
+    ". nav nav nav ."
+    ". Image Image Image ."
+    ". About-me What-i-do Get-in-touch ."
+    ". footer footer footer .";
+grid-template-columns: 20% 20% 20% 20% 20%;
+grid-template-rows: 30% 30% auto 10%;
 gap: 0px 0px;
 }
 .nav{
+grid-area: nav;
 display: flex;
+justify-content:space-between;
 background-color: #a4aeb0;
 }
 ul{
@@ -26,6 +28,7 @@ ul{
 }
 .Menu {
     grid-area: menu;
+    justify-items: right;
 }
 .Image {
 grid-area: Image;
