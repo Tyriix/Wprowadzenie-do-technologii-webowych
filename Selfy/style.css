@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    background-color: #f3f4f5;
+}
+.container{
+display: grid;
+grid-template-areas: 
+    "menu logo logo"
+    "Image Image Image"
+    "About-me What-i-do Get-in-touch"
+    "footer footer footer";
+grid-template-columns: 22% 4% 74%;
+grid-template-rows: auto;
+gap: 0px 0px;
+}
+.nav{
+display: flex;
+background-color: #a4aeb0;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+.Logo {
+    grid-area: logo;
+}
+.Menu {
+    grid-area: menu;
+}
+.Image {
+grid-area: Image;
+}
+.About-me{
+    display: flex;
+    flex-direction: column;
+    grid-area: About-me;
+}
+.What-i-do{
+    display: flex;
+    flex-direction: column;
+    grid-area: What-i-do;
+}
+.Get-in-touch{
+    display: flex;
+    flex-direction: column;
+    grid-area: Get-in-touch;
+}
+.Footer{
+    grid-area: footer;
+}
