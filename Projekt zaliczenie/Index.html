@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <script
+      src="https://kit.fontawesome.com/c39d17edb5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="icon" href="Images/favicon.png" />
+    <title>Tatrapower</title>
+  </head>
+  <body>
+    <div class="mainscreen">
+      <nav class="navbar">
+        <div class="wrapper">
+          <div class="logo" id="home">
+            <a href="">TATRAPOWER</a>
+          </div>
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#order">ORDER</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="banner"></div>
+    </div>
+    <div class="about">
+      <div class="wrapper">
+        <div class="margin-wrapper">
+          <a class="anchor" id="about">.</a>
+          <div class="title">
+            The best <span class="span-accent">energy drink</span> on the
+            market!
+          </div>
+          <div class="about-description">
+            <div class="about-first-column">
+              <p>
+                We are a brand new award winning bevrage company based in
+                <span class="span-accent">Krakow, Poland</span> offering
+                refreshing, vegan and sugar free energy drinks filled with
+                nutrients.
+                <br />
+                Our goal is to elevate the market filled with unhealthy products
+                to the next level by providing you a healthy and tasty
+                alternative.
+              </p>
+            </div>
+            <div class="about-second-column">
+              <p>
+                <span class="span-accent">Tatrapower</span> thrives to bring you
+                the upmost quality in our services as well as our products.
+                <br />
+                We exclusively work with reputable suppliers to ensure you the
+                best quality ingredients and amazing flavour profiles. Customers
+                are at the heart of everything we do and the result is the best
+                bevrage around!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="order" id="order">
+      <div class="wrapper">
+        <div class="margin-wrapper">
+          <a class="anchor" id="order">.</a>
+          <div class="title">Order</div>
+          <div class="product">
+            <div class="product-image">
+              <img src="Images/order.png" alt="" id="product-image" />
+            </div>
+            <div class="description">
+              <div class="title">
+                <span id="product-name">TATRAPOWER CLASSIC</span>
+              </div>
+              <p>
+                <i class="fas fa-check-square"></i> 100% MORE COFFEINE THAN
+                USUAL ENERGY DRINKS
+              </p>
+              <p>
+                <i class="fas fa-check-square"></i> VITAMIN C, B2, B3, B5, B6,
+                B12
+              </p>
+              <p><i class="fas fa-check-square"></i> NO PRESERVATIVES</p>
+              <p><i class="fas fa-check-square"></i> VEGAN</p>
+              <p>
+                <i class="fas fa-check-square"></i>
+                NO SUGAR
+              </p>
+              <p>
+                <i class="fas fa-check-square"></i>
+                <span id="flavor"> ORANGE FLAVOR </span>
+              </p>
+              <div class="flavor-change">
+                <p>Change flavor</p>
+                <div class="flavor-buttons">
+                  <i class="fas fa-caret-square-left" id="changeLeft"></i>
+                  <i class="fas fa-caret-square-right" id="changeRight"></i>
+                </div>
+              </div>
+              <div class="buy-button">
+                <div class="button">
+                  <div class="icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <span>Buy now</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery">
+      <div class="wrapper">
+        <div class="margin-wrapper">
+          <a class="anchor" id="gallery">.</a>
+          <div class="title">Gallery</div>
+          <div class="gallery-container">
+            <div class="img-holder">
+              <img src="Images/gallery-image-one.png" alt="Image" />
+            </div>
+            <div class="img-holder">
+              <img src="Images/gallery-image-two.png" alt="Image" />
+            </div>
+            <div class="img-holder">
+              <img src="Images/gallery-image-three.png" alt="Image" />
+            </div>
+            <div class="img-holder">
+              <img src="Images/gallery-image-four.png" alt="Image" />
+            </div>
+            <div class="img-popup">
+              <div class="source-popup">
+                <img src="" alt="Popup Image" />
+                <div class="close-btn">
+                  <i class="fas fa-times"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="wrapper">
+        <div class="margin-wrapper">
+          <div class="title">
+            <a class="anchor" id="faq">.</a>
+            FAQ
+          </div>
+          <div class="question-container">
+            <div class="question-box">
+              <div class="question">
+                <p>
+                  What makes Tatrapower energy drink healthier than other energy
+                  drinks?
+                </p>
+                <i class="fas fa-chevron-down" id="arrow"></i>
+              </div>
+              <div class="answer" id="answer">
+                <p>
+                  Tatrapower is designed to provide you a boost of energy and
+                  hydration with the added benefits of vitamins and
+                  electrolytes.
+                </p>
+              </div>
+            </div>
+            <div class="question-box">
+              <div class="question">
+                <p>How much caffeine is in each can?</p>
+                <i class="fas fa-chevron-down" id="arrow"></i>
+              </div>
+              <div class="answer" id="answer">
+                <p>
+                  Tatrapower contains natural green coffee caffeine, 160mg in
+                  each can.
+                </p>
+              </div>
+            </div>
+            <div class="question-box">
+              <div class="question">
+                <p>When can I buy Tatrapower?</p>
+                <i class="fas fa-chevron-down" id="arrow"></i>
+              </div>
+              <div class="answer" id="answer">
+                <p>
+                  You can buy Tatrapower on our website by clicking
+                  <span class="span-accent"><a href="#order">here</a></span> or
+                  in various shops throughout the world.
+                </p>
+              </div>
+            </div>
+            <div class="question-box">
+              <div class="question">
+                <p>When will my Tatrapower arrive?</p>
+                <i class="fas fa-chevron-down" id="arrow"></i>
+              </div>
+              <div class="answer" id="answer">
+                <p>
+                  All of our orders are processed within 48 hours of receipt.
+                  Due to high demand, some delays can occur.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact">
+      <div class="wrapper">
+        <div class="margin-wrapper">
+          <div class="title">
+            <a class="anchor" id="contact">.</a>
+            Contact Us!
+          </div>
+          <div class="contactform">
+            <div class="contactname">
+              <label for="fname">E-mail</label>
+              <input
+                type="text"
+                id="e-mail"
+                name="e-mail"
+                placeholder="Your e-mail..."
+              />
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name..."
+              />
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name..."
+              />
+              <label for="subject">Subject</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something..."
+              ></textarea>
+              <input type="submit" value="Submit" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="wrapper">
+        <div class="logo">
+          <a href=""><span class="span-accent">TATRAPOWER</span></a>
+        </div>
+        <div class="social-media">
+          <a href="https://www.facebook.com" target="_blank">
+            <div class="button">
+              <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+              </div>
+              <span>Facebook</span>
+            </div>
+          </a>
+          <a href="https://www.twitter.com" target="_blank">
+            <div class="button">
+              <div class="icon">
+                <i class="fab fa-twitter"></i>
+              </div>
+              <span>Twitter</span>
+            </div>
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <div class="button">
+              <div class="icon">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <span>Instagram</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="copyright">
+        Copyright &copy; <span id="year"></span>, TATRAPOWER
+      </div>
+    </div>
+    <script>
+      const navbar = document.querySelector(".navbar");
+      const menu = document.querySelector(".menu-list");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      const rightBtn = document.querySelector(".fa-arrow-right");
+      $("li a").click(function () {
+        $(".menu-list").removeClass("active");
+        $(menuBtn).removeClass("hide");
+      });
+      menuBtn.onclick = () => {
+        menu.classList.add("active");
+        menuBtn.classList.add("hide");
+      };
+      cancelBtn.onclick = () => {
+        menu.classList.remove("active");
+        menuBtn.classList.remove("hide");
+      };
+      window.onscroll = () => {
+        this.scrollY > 20
+          ? navbar.classList.add("sticky")
+          : navbar.classList.remove("sticky");
+      };
+    </script>
+    <script>
+      const image = document.getElementById("product-image");
+      const buttonLeft = document.getElementById("changeLeft");
+      const buttonRight = document.getElementById("changeRight");
+      const flavor = document.getElementById("flavor");
+      const productName = document.getElementById("product-name");
+      function change() {
+        if (image.getAttribute("src") === "Images/order.png") {
+          image.setAttribute(
+            "src",
+            "Images/order2.png",
+            (flavor.innerHTML = "GRAPE FLAVOR"),
+            (productName.innerHTML = "TATRAPOWER GRAPE")
+          );
+        } else {
+          image.setAttribute("src", "Images/order.png"),
+            (flavor.innerHTML = "ORANGE FLAVOR"),
+            (productName.innerHTML = "TATRAPOWER CLASSIC");
+        }
+      }
+      buttonLeft.addEventListener("click", change);
+      buttonRight.addEventListener("click", change);
+    </script>
+    <script>
+      const question = document.querySelectorAll(".question");
+      question.forEach((question) => {
+        question.onclick = function () {
+          let content = this.nextElementSibling;
+          let arrow = this.querySelector("i");
+          if (content.style.display == "block") {
+            content.style.display = "none";
+            arrow.id = "arrownormal";
+          } else {
+            content.style.display = "block";
+            arrow.id = "arrowrotate";
+          }
+        };
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        var imgPopup = $(".img-popup");
+        var imgCont = $(".img-holder");
+        var popupImage = $(".img-popup img");
+        var closeBtn = $(".close-btn");
+        var sourcePopup = $(".source-popup");
+
+        imgCont.on("click", function () {
+          var img_src = $(this).children("img").attr("src");
+          sourcePopup.children("img").attr("src", img_src);
+          imgPopup.addClass("opened");
+          $("body").addClass("stop-scrolling");
+        });
+
+        $(imgPopup, closeBtn).on("click", function () {
+          imgPopup.removeClass("opened");
+          sourcePopup.children("img").attr("src", "");
+          $("body").removeClass("stop-scrolling");
+        });
+
+        popupImage.on("click", function (e) {
+          e.stopPropagation();
+        });
+      });
+    </script>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+  </body>
+</html>
