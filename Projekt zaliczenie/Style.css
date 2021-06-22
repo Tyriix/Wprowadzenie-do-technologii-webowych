@@ -260,7 +260,7 @@ a.anchor {
 .img-holder img:hover {
   box-shadow: 4px 4px 10px -1px rgba(0, 0, 0, 0.68);
 }
-.img-holder:last-child {
+#lastchild{
   margin-right: 0px;
 }
 .img-holder img {
@@ -287,7 +287,6 @@ a.anchor {
   opacity: 0;
   transform: translateY(-100px);
 }
-
 .close-btn {
   position: absolute;
   margin-top: 60px;
@@ -325,6 +324,9 @@ a.anchor {
 .question-box:first-child {
   border-top: 2px #ff6a2f solid;
   padding-top: 15px;
+}
+.question-box:last-child{
+  margin-bottom: 40px;
 }
 .question-box {
   padding-top: 20px;
