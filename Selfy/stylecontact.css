@@ -3,22 +3,31 @@
     background: #b3d4fc;
     text-shadow: none;
 }
+::placeholder{
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    padding-left: 8px;
+}
 body{
     margin: 0;
     font-family: 'Roboto Condensed';
     background-color: #f3f4f5;
     -webkit-font-smoothing: antialiased;
 }
+strong, h1, h2, h3, h4, h5, h6, b, .more, ol > li:before, .cta a {
+    font-family: 'robotobold';
+    font-weight: normal;
+}
 .container{
 display: grid;
 grid-template-areas: 
     ". nav nav nav ."
-    ". mock mock mock ."
-    ". About-me About-me About-me ."
-    ". content content content ."
+    ". content content sidebar ."
+    ". content content sidebar ."
+    ". content content . ."
     ". footer footer social .";
 grid-template-columns: 20% 20% 20% 20% 20%;
-grid-template-rows: 150px 35% 20% 28% auto;
+grid-template-rows: 150px 18% 30% 40% auto;
 gap: 0px 0px;
 }
 .nav{
@@ -26,14 +35,79 @@ grid-area: nav;
 display: flex;
 justify-content:space-between;
 align-items: center;
-
 border-bottom: 1px solid #cad2d7;
 padding-top: 60px;
 padding-bottom: 45px;
 }
 .content{
+    grid-area: content;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    grid-area: sidebar;
+    border-left: 1px solid #cad2d7;
+    padding-left: 30px;
+    margin-top: 50px;
+}
+.sidebar img{
+    max-width: 75%;
+}
+.sidebar ul, .sidebar ol{
+    margin-bottom: 12px;
+}
+.sidebar ul li{
+    list-style-type: none;
+    line-height: 20px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    position: relative;
+    padding-left: 22px;
+}
+.sidebar ul{
+    flex-direction: column;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input[type=text]{
+    width: 420px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+#whats-about{
+    width: 650px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+.backing{
+    margin-right: 35px;
+    color: #656a6f;
+}
+form{
+    padding-top: 25px;
+}
+
+input[type=submit]:hover{
+    background-color: #646d72;
+    transition: all 0.2s ease-in-out;
+}
+li::before{
+    font-size: 14px;
+    left: 3px;
+    top: 6px;
+    position: absolute;
+    color: #ffc000;
+}
+p span{
+    font-size: 14px;
+    color: #ffc000;
+}
+.more{
+    font-weight: bold;
 }
 .Logo {
     max-width: 131px;
@@ -51,6 +125,11 @@ ul{
 }
 ul a{
     margin-right: 10px;
+}
+.sidebar ul{
+    padding-left: 0px;
+    padding-bottom: 30px;
+    border-bottom: dotted 1px #cad2d7;
 }
 .nav a{
     font-family: 'Roboto Condensed', sans-serif;
@@ -71,28 +150,29 @@ a{
     grid-area: menu;
     justify-items: right;
 }
-.mock{
-    grid-area:mock;
-    margin: 3em 0 1em;
-}
-.mock img{
-    max-width: 100%;
-    border:solid 6px #fff
-}
-.About-me{
-    grid-area: About-me;
-}
+
 .content{
     grid-area: content;
 }
-.columnOne{
-    width: 47%;
-    margin-right: 6%;
+.lead{
+    width: 630px;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: 'aleoitalic';
 }
-.columnTwo{
-    width: 47%;
+input[type=submit]{
+    color: #fff;
+    border-radius: 3px;
+    font-family: 'Roboto Condensed';
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ffc000;
+    border:none;
+    width: 140px;
+    height: 40px;
+    margin-right: 5px;
+    transition: all 0.2s ease-in-out;
 }
-
 .Footer{
     grid-area: footer;
     border-top: 1px solid #cad2d7;
@@ -128,22 +208,22 @@ h1{
     font-size: 66px;
     color: #2d3438;
 }
-.lead{
-    margin-top: 0;
-    font-size: 24px;
-    line-height: 32px;
-    font-family: 'aleoitalic';
-    width: 74%;
-    margin-right: 4%;
-    color: #2d3438;
-}
 h2{
     font-family: 'Roboto Condensed';
+    font-weight: bold;
     font-size: 36px;
     margin-top: 15px;
     color: #2d3438;
 }
 h1::after{
+    content: ".";
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 56px;
+    position: relative;
+    padding-left: 3px;
+    color:#ffc000;
+}
+h2::after{
     content: ".";
     font-family: Arial, Helvetica, sans-serif;
     font-size: 56px;

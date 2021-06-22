@@ -5,7 +5,10 @@
 }
 body{
     margin: 0;
+    font-family: 'Roboto Condensed';
     background-color: #f3f4f5;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
 }
 .container{
 display: grid;
@@ -15,7 +18,7 @@ grid-template-areas:
     ". About-me What-i-do Get-in-touch ."
     ". footer footer social .";
 grid-template-columns: 20% 20% 20% 20% 20%;
-grid-template-rows: 10% 50% auto auto;
+grid-template-rows: 150px 80% 40% 18%;
 gap: 0px 0px;
 }
 #mainscreenimage{
@@ -28,7 +31,6 @@ grid-area: nav;
 display: flex;
 justify-content:space-between;
 align-items: center;
-
 border-bottom: 1px solid #cad2d7;
 padding-top: 60px;
 padding-bottom: 45px;
@@ -58,7 +60,7 @@ a{
     color: #2d3438;
     text-decoration: none;
 }
-a:hover{
+.nav ul a:hover{
     background-color: #646d72;
     color: #fff;
 }
@@ -97,7 +99,7 @@ a:hover{
 .image p{
     color: #fff;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, b, ol > li:before {
     font-weight: normal;
     line-height: 100%;
     letter-spacing: -1px;
