@@ -18,7 +18,7 @@ grid-template-areas:
     ". About-me What-i-do Get-in-touch ."
     ". footer footer social .";
 grid-template-columns: 20% 20% 20% 20% 20%;
-grid-template-rows: 150px 80% 40% 18%;
+grid-template-rows: 150px 90% 40% 18%;
 gap: 0px 0px;
 }
 #mainscreenimage{

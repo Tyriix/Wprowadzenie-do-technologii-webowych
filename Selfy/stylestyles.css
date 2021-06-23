@@ -128,6 +128,13 @@ p{
     margin: 1em 70px 40px 0;
     color:#656a6f;
 }
+.content a{
+    transition: all 0.2s ease-in-out;
+}
+.content a:hover{
+    color:#ffc000;
+    transition: all 0.2s ease-in-out;
+}
 /* Headings */
 h1, h2, h3, h4, h5, h6, b, ol > li:before {
     font-weight: normal;
@@ -219,6 +226,10 @@ button{
     border-bottom: 1px solid #cad2d7;
     padding-bottom: 50px;
     max-width: 90%;
+}
+button:hover{
+    background-color: #646d72;
+    transition: all 0.2s ease-in-out;
 }
 /*Images*/
 .images img{
@@ -321,6 +332,10 @@ input[type=submit]{
     border:none;
     width: 140px;
     height: 40px;
+    transition: all 0.2s ease-in-out;
+}
+input[type=submit]:hover{
+    background-color: #646d72;
     transition: all 0.2s ease-in-out;
 }
 /*Columns*/
