@@ -176,3 +176,8 @@ p{
     width: 31px;
     height: 31px;
 }
+@media (min-width: 2560px) {
+    .container{
+        grid-template-rows: 150px 120% 40% 18%;
+    }
+}

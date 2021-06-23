@@ -162,3 +162,8 @@ p{
     margin: 1em 0;
     color: #2d3438;
 }
+@media (min-width: 2560px) {
+    .container{
+        grid-template-rows: 150px 43% 20% 28% auto;
+    }
+}
